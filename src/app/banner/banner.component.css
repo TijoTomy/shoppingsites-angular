@@ -1,0 +1,33 @@
+.banner{
+    background-image: url('/assets/banner-header.png');
+    width: 100%;
+
+}
+
+.image-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.banner img{
+    height: 120px;
+    width: 120px;
+    margin: 0;
+}
+.banner-text{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h2,.banner-text h5{
+    color: white;
+    font-family: sans-serif;
+    margin:0;
+}
+.banner-text h5{
+    font-style: italic;
+    margin: 0;
+}

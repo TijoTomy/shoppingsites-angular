@@ -1,0 +1,19 @@
+<div class="row product-wrap s ">
+    <div class="col-md-4 mt-3" *ngFor="let item of productList;let index as i">
+<div class=" product ">
+                    <div class="product-image">
+                        <img [src]="item.source" alt="product image">
+                    </div>
+                    <div class="product-price">
+                <div class="product-info">
+                    <p class="price-text">{{item.name}}</p>
+                    <p class="price-text">cad {{item.price}}</p>
+                    
+                </div>
+                <button class="btn-buynow">Buy Now</button>
+               
+            </div>
+           
+        </div>
+    </div>
+</div>
