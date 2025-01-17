@@ -1,0 +1,26 @@
+<div class=" bg-light cart-wrap">
+    <div class="cart-sidebar">
+        <p>pppp</p>
+    </div>
+    <div class="cartitem-wrap">
+       <div class="proceed-payment">
+        <button class="btn "(click)="navigateToHome()" >ADD NEW ITEM</button>
+        <button class="btn " >PROCEED TO PAYMENT</button>
+       </div>
+<div class="cart-item" *ngFor="let item of cartService.cartData;let index as i">
+<img [src]="item.source" alt="image">
+<div class="item-desciption">
+    <h4 class="item-name">{{item.name}}</h4>
+    <p class="description">{{item.description}}</p>
+    <div class="color-price">
+        <p>color: {{item.color}}</p>
+        <p>CAD {{ "$"+item.price}}</p>
+    </div>
+    <div class="remove-btn">
+        <button class="btn " (click)="removeItem(index)">Remove Item</button>
+    </div>
+</div>
+</div>
+    </div>
+
+</div>

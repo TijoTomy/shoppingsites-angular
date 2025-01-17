@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class ProductDataService {
   productlist:any=[
     {
+      id:1,
       name:"Air-jordan 4",
       price:"100",
       source:"/assets/airjordan-4.png",
@@ -14,6 +15,7 @@ export class ProductDataService {
       countryoforgin:"India"
     },
     {
+      id:2,
       name:"Air-jordan 1 mid",
       price:"80",
       source:"/assets/airjorda1mid.png",
@@ -22,6 +24,7 @@ export class ProductDataService {
       countryoforgin:"India"
     },
     {
+      id:3,
       name:"Air-jordan 1 low",
       price:"80",
       source:"/assets/airjordan1low.png",
@@ -30,6 +33,7 @@ export class ProductDataService {
       countryoforgin:"India"
     },
     {
+      id:4,
       name:"jordan 4 rm",
       price:"90",
       source:"/assets/jordan4rm.png",
@@ -38,6 +42,7 @@ export class ProductDataService {
       countryoforgin:"India"
     },
     {
+      id:5,
       name:"jordan mvp",
       price:"80",
       source:"/assets/jordanmvp.png",
@@ -46,6 +51,7 @@ export class ProductDataService {
       countryoforgin:"India"
     },
     {
+      id:6,
       name:"jordan spizikie low",
       price:"80",
       source:"/assets/jordanspizikelow.png",
@@ -54,6 +60,7 @@ export class ProductDataService {
       countryoforgin:"India"
     }
   ]
+selectedProduct:any=[];
 
   constructor() { }
 }

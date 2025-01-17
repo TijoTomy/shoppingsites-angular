@@ -1,0 +1,74 @@
+.component-wrap{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image-container img{
+    height: 370px;
+    width: 370px;
+    border: 2px solid #008080;
+}
+.image-container{
+    width: 40%;
+}
+
+.description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+     align-items: flex-start;
+}
+.description h3{
+    color:#800020 ;
+    text-transform: uppercase;
+}
+.description p{
+    max-width: 70ch;
+    padding-top: 25px;
+    font-size: 17px;
+    color:#008080 ;
+    font-family: sans-serif;
+    
+}
+.description h4{
+    color: #800020;
+}
+.price{
+width: 75%;
+}
+.submit-btn,
+.submit-btn:active,
+.submit-btn:visited,
+.submit-btn:focus{
+    background-color: transparent;
+    width: 75%;
+    height: 48px;
+    background-color: #008080;
+    border: 1px solid #008080;
+    color: #fff;
+    transition: all 1s;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: 30px;
+    outline: 0px !important;
+}
+.submit-btn:hover{
+    background-color: transparent;
+    color: #008080;
+    border: 1px solid #008080;
+}
+
+@media screen and (max-width: 600px) {
+    .component-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .image-container img{
+        height: 200px;
+        width: 200px;
+        border: 2px solid #008080;
+    }
+}

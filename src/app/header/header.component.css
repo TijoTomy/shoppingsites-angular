@@ -1,6 +1,7 @@
 /* navbar style start*/
 .navbar-style{
     background-color: rgba(24, 24, 24, 1);
+    height: 15vh;
     padding: 20px 0;
 }
 .navbar-style a{

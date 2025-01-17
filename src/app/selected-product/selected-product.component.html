@@ -1,0 +1,17 @@
+<div class="container-fluid bg-light component-wrap">
+    <div class="image-container">
+        <img [src]="selectedProduct.source" class="img-fluid"  clalt="selecetd product image">
+    </div>
+    <div class="description">
+        <h3>{{selectedProduct.name}}</h3>
+        <p>{{selectedProduct.description}}</p>
+        <div class="d-flex justify-content-start">
+        <p class="fw-bold me-3"><span>Color : </span>{{selectedProduct.color}}</p>
+        <p class="fw-bold"><span>County Of Origin : </span>{{selectedProduct.countryoforgin}}</p>
+    </div>
+    <div class=" d-flex justify-content-end price ">
+        <h4>CAD  {{"$"+selectedProduct.price}}</h4>
+    </div>
+    <button type="button" class="btn  submit-btn form_submit" (click)="onAddToCart()">ADD TO CART</button>
+    </div>
+</div>
