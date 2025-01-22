@@ -1,11 +1,10 @@
 <div class=" bg-light cart-wrap">
     <div class="cart-sidebar">
-        <p>pppp</p>
     </div>
     <div class="cartitem-wrap">
        <div class="proceed-payment">
         <button class="btn "(click)="navigateToHome()" >ADD NEW ITEM</button>
-        <button class="btn " >PROCEED TO PAYMENT</button>
+        <button class="btn " routerLink="/Payment">PROCEED TO PAYMENT</button>
        </div>
 <div class="cart-item" *ngFor="let item of cartService.cartData;let index as i">
 <img [src]="item.source" alt="image">

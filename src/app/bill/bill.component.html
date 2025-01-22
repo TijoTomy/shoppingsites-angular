@@ -1,0 +1,16 @@
+<div class="price">
+    <div class="price-header">
+        <h5>Bill Reciept</h5>
+    </div>
+    <div class="price-items" *ngFor="let item of cartData">
+        <div class="price-item">
+        <p>{{item.name}}</p>
+        <p>CAD {{"$"+item.price}}</p>
+    </div>
+    </div>
+    <div class="toal-price">
+        <p> TOTAL PRICE : CAD {{"$"+totalPrice}}</p>
+        <p>HST : CAD {{"$"+hst}}</p>
+        <p>TOTAL COST :  CAD {{"$"+totalCost}}</p>
+    </div>
+</div>

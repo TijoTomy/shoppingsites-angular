@@ -1,1 +1,45 @@
-<p>payment works!</p>
+<div class=" pt-4 bg-light">
+<div class="container "> 
+    <app-bill></app-bill>
+    <div class="detail-section">
+        <h5 class="payment">Payment</h5>
+        <form [formGroup]="paymentForm" (ngSubmit)="handleSubmit()">                  
+        <div class="row">
+        <div class="col-md-4">
+            <label>First Name</label>
+            <input type="text" class=" form-control" required formControlName="firstName" id="name" placeholder="Enter first  name">
+            <span class="error" *ngIf="!paymentForm?.get('firstName')?.valid && paymentForm?.get('firstName')?.touched">enter the firstname</span>
+        </div>
+        <div class="offset-md-1 col-md-4">
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="name" required formControlName="lastName" placeholder="Enter last  name">
+            <span class="error" *ngIf="!paymentForm?.get('lastName')?.valid && paymentForm?.get('lastName')?.touched">enter the lastName</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Card No</label>
+            <input type="text" class=" form-control" formControlName="cardNo" required id="name" placeholder="Enter card number">
+            <span class="error" *ngIf="!paymentForm?.get('cardNo')?.valid && paymentForm?.get('cardNo')?.touched">enter the proper card number</span>
+        </div>
+        <div class="offset-md-1 col-md-4">
+            <label>CVC</label>
+            <input type="text" class="form-control" formControlName="cvc" required id="name" placeholder="Enter cvc code">
+            <span class="error" *ngIf="!paymentForm?.get('cvc')?.valid && paymentForm?.get('cvc')?.touched">enter the proper cvc code</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Expiry Date</label>
+            <input type="text" class=" form-control" formControlName="expiryDate" required id="name" placeholder="Enter expiry date">
+            <span class="error" *ngIf="!paymentForm?.get('expiryDate')?.valid && paymentForm?.get('expiryDate')?.touched">enter the proper expiry date</span>
+        </div>
+        <div class="offset-md-1  col-md-4">
+            <button class="btn  form-control" type="submit">Complete Payment</button>
+        </div>
+    </div>
+        
+</form>
+    </div>
+</div>
+</div>

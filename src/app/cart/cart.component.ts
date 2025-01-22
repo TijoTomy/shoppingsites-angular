@@ -2,10 +2,11 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import {CartService} from '../service/cart.service';
 import { NgFor } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
-  imports: [NgFor],
+  imports: [NgFor,RouterLink],
   providers:[],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'

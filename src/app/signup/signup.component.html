@@ -1,0 +1,48 @@
+
+<div class="signup-wrap bg-light">
+    <div class="signup">
+    <div class="image-section">
+        <img src="assets/shoe-8563626_640.jpg" class="header-icon" alt="jjjjjj">
+        <h4>Nukes</h4>
+    </div>
+    <div class="form-section">
+        <form [formGroup]="signupform"  class="form-design" (ngSubmit)="handleSubmit()">                  
+            <div class="row mb-2">
+            <div class="col-md-12 ">
+                <label>First Name</label>
+                <input type="text" class=" form-control" required formControlName="firstName" id="name" placeholder="Enter first  name">
+                <span class="error" *ngIf="!paymentForm?.get('firstName')?.valid && paymentForm?.get('firstName')?.touched">enter the firstname</span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <label>Last Name</label>
+                <input type="text" class=" form-control" required formControlName="lastName" id="name" placeholder="Enter first  name">
+                <span class="error" aria-autocomplete="none" *ngIf="!paymentForm?.get('lastName')?.valid && paymentForm?.get('lastName')?.touched">enter the Last</span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <label>Email</label>
+                <input type="email" class=" form-control" formControlName="email" required id="name" placeholder="Enter card number">
+                <span class="error" *ngIf="!paymentForm?.get('email')?.valid && paymentForm?.get('email')?.touched">enter the proper card number</span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <label>Password</label>
+                <input type="password" class=" form-control mb-2" formControlName="password" required id="name" placeholder="Enter expiry date">
+                <span class="error" *ngIf="!paymentForm?.get('expiryDate')?.valid && paymentForm?.get('expiryDate')?.touched">enter the proper expiry date</span>
+            </div>
+            <div class=" col-md-12">
+                <button class="btn register-btn" type="submit">Register</button>
+            </div>
+        </div>
+            
+    </form>
+    </div>
+    <div class="footer-section">
+<h6><a target="#">Login</a></h6>
+    </div>
+</div>
+</div>

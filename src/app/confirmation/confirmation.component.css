@@ -1,0 +1,22 @@
+.confirmation-wrap{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirmation-content{
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px lightgrey;
+
+    
+}
+.home-btn{
+    background-color:#008080;
+    color: white;
+    border-radius: 3px;
+}

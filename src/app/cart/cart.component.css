@@ -29,7 +29,7 @@
     justify-content: space-between;
 }
 .proceed-payment button{
-    background-color:#800020;
+    background-color:#008080;
     color: white;
     border-radius: 3px;
 }
@@ -75,8 +75,8 @@
     justify-content: flex-end;
 }
 .remove-btn button{
-    background-color: #800020 ;
-    border-color: #800020;
+    background-color: #008080 ;
+    border-color: #008080;
     color: white;
     padding: 10px 30px;
     font-size: 19px;
