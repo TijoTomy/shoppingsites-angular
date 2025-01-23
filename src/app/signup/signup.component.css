@@ -22,6 +22,11 @@
     flex-direction: column;
     align-items: center;
 }
+.image-section h4{
+    position: relative;
+    right: 10px;
+    color: #008080;
+}
 .header-icon{
     height: 40px;
     width: 40px;
@@ -30,6 +35,7 @@
     border: 1px solid black;
 }
 .form-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +52,21 @@
 
 }
 .form-design{
-    width: 90%;
+    width: 100%;
+}
+.form-control{
+    width: 100%;
+    border-radius: 3px;
 }
 .footer-section{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+}
+.footer-section h6{
+    color: rgb(96, 96, 240);
+ 
+}
+.error{
+    color:red;
 }

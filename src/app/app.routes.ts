@@ -5,6 +5,7 @@ import {CartComponent} from './cart/cart.component';
 import {PaymentComponent} from './payment/payment.component';
 import {ConfirmationComponent} from './confirmation/confirmation.component';
 import {SignupComponent} from './signup/signup.component';
+import {LoginComponent} from './login/login.component';
 export const routes: Routes = [
     { path: 'Home', component: ProductListComponent },
     { path: '',   redirectTo: '/Home', pathMatch: 'full' },
@@ -12,8 +13,7 @@ export const routes: Routes = [
     {path:'Cart',component:CartComponent},
     {path:'Payment',component:PaymentComponent},
     {path:'Confirmation',component:ConfirmationComponent},
-    {path:'Signup',component:SignupComponent}
-
-
+    {path:'Signup',component:SignupComponent},
+    {path:'Login',component:LoginComponent}
     
 ];

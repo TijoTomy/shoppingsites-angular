@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="login-wrap bg-light">
+    <div class="login">
+    <div class="image-section mb-2">
+        <img src="assets/shoe-8563626_640.jpg" class="header-icon mb-1" alt="jjjjjj">
+        <h4>Nukes</h4>
+    </div>
+    <div class="login-form ">
+        <form [formGroup]="loginform"  class="form-design " (ngSubmit)="handleSubmit()"> 
+            <div class="row mb-2">
+                <div class="offset-md-2 col-md-8">
+                    <label>Email</label>
+                    <input type="email" class=" form-control" formControlName="email" required id="name" placeholder="Enter card number">
+                    <span class="error" *ngIf="!paymentForm?.get('email')?.valid && paymentForm?.get('email')?.touched">enter the proper card number</span>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="offset-md-2 col-md-8">
+                    <label>Password</label>
+                    <input type="password" class=" form-control mb-2" formControlName="password" required id="name" placeholder="Enter expiry date">
+                    <span class="error" *ngIf="!paymentForm?.get('expiryDate')?.valid && paymentForm?.get('expiryDate')?.touched">enter the proper expiry date</span>
+                </div>            
+            </div>
+            <div class="row">
+                <div class="offset-md-2 col-md-8">
+                    <button class="btn login-btn" type="submit">Login</button>
+                </div>
+            </div>   
+</form>
+    </div>
+    <div class="login-footer">
+        <h6><a routerLink="/Signup">Register</a></h6>
+    </div>
+</div>
+</div>
