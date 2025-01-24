@@ -16,7 +16,6 @@ export class LoginComponent {
   });
   constructor(public signupservice:SignupService,private router:Router){}
   handleSubmit(){
-    
     let currentuser:any= this.signupservice.userData.filter((data:any)=>data.email==this.loginform.value.email)
     if(currentuser[0].password==this.loginform.value.password){
       this.router.navigate(['/Home'])

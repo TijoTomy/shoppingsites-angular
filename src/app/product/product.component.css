@@ -21,6 +21,7 @@
     width: 320px;;
     height: 220px;
     margin: 0;
+    object-fit: cover;
 }
 .product-price{
     height: 100px;
