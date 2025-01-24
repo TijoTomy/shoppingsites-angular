@@ -83,8 +83,9 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
-                "glob": "**/*",
-                "input": "public/assets"
+                "glob": "_redirects",
+                 "input": "src",
+                  "output": "/"
               }
             ],
             "styles": [
